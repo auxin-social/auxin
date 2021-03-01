@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>File Upload</title>
+  </head>
+  <body>
+    <h1>File Upload</h1>
+    <form method="POST" action="https://d54cc2e2be96.ngrok.io/post-content-image" enctype="multipart/form-data">
+      <p><input type="file" name="file" multiple></p>
+      <p><input type="submit" value="Submit"></p>
+    </form>
+    <hr>
+{#    {% for file in files %}#}
+{#      <img src="{{ url_for('upload', filename=file) }}" style="width: 64px">#}
+{#    {% endfor %}#}
+  </body>
+</html>
